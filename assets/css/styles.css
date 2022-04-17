@@ -1,8 +1,8 @@
 /* @import url("font-awesome/css/font-awesome.min.css"); */
 
-.body {
+.container {
     /* background-color: #909E80; */
-    background-color: #E5E5E5;
+    background-color: #F3F5FC;
     border: 1px solid green;
     max-width: 100vw;
     min-height: 100vh;
@@ -43,14 +43,14 @@
 
 .input-text {
     /* background-color: #B9C7A9; */
-    background-color: #F3F5FC;
+    background-color: #FFFFFF;
     color: #0A3871;
     border-radius: 2%;
 }
 
 .output-text {
     /* background-color: #B9C7A9; */
-    background-color: #F3F5FC;
+    background-color: #FFFFFF;
     color: #0A3871;
     border-radius: 2%;
 }
