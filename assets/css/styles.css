@@ -102,3 +102,8 @@
 /* .social li a:hover, .intro-social li a:focus {
 	color: #cc005f;
 } */
+
+.social i {
+    color: cornflowerblue;
+    font-size: 30px;
+}
