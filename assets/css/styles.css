@@ -1,68 +1,107 @@
+/* @import url("font-awesome/css/font-awesome.min.css"); */
+
 .body {
     /* background-color: #909E80; */
     background-color: #E5E5E5;
-    border: 2px solid green;
+    border: 1px solid green;
     max-width: 100vw;
     min-height: 100vh;
 }
 
-.container-menu {
-    border: 3px solid red;
-    display: flex;
-}
-
-.container-main {
-    border: 1px solid red;
+.container-header {
+    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
 
-}.input-text-area {
-    border: 1px solid yellow;
+.container-main {
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container-footer {
+    border: 2px solid red;
+    height: 40px;
+}
+
+.input-text-area {
+    /* border: 1px solid blue; */
     display: grid;
     place-items: center;
+    padding: 10px;
 }
 
 .output-text-area {
-    border: 1px solid white;
+    /* border: 1px solid blue; */
     display: grid;
     place-items: center;
+    padding: 10px;
 }
 
 .input-text {
     /* background-color: #B9C7A9; */
     background-color: #F3F5FC;
     color: #0A3871;
+    border-radius: 2%;
 }
 
 .output-text {
     /* background-color: #B9C7A9; */
     background-color: #F3F5FC;
     color: #0A3871;
+    border-radius: 2%;
 }
 
 .buttons-area {
     align-items: center;
 }
 
+
+/*========================ARRUMAR*/
+
+.container-menu div {
+    /* color: 5px solid green; */
+}
+
+.app-name {
+    color: 10px solid black;
+}
+
 .social {
-	display: block;
-	position: absolute;
-	width: 100%;
-	left: 0;
-	bottom: 7.2rem;
-	font-size: 3.3rem;
-	margin: 0;
-	padding: 0;
+    color: 10px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	/* display: block;
+	position: absolute; */
+	/* width: 100%; */
+	/* left: 0; */
+	/* bottom: 7.2rem; */
+	/* font-size: 1rem; */
+	/* margin: 0;
+	padding: 0; */
 }
+
 .social li {
-	display: inline-block;
-	margin: 0 20px;
-	padding: 0;
+    color: 10px solid black;
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
 }
-.social li a, .intro-social li a:visited {
-	color: #black;
+
+.social li a {
+    /* border: 2px solid green; */
+    text-decoration: none;
+    color: blue;
 }
-.social li a:hover, .intro-social li a:focus {
+
+
+/* .social li a:hover, .intro-social li a:focus {
 	color: #cc005f;
-}
+} */
+
+
+
