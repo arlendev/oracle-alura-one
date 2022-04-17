@@ -1,0 +1,40 @@
+.body {
+    /* background-color: #909E80; */
+    background-color: #E5E5E5;
+    border: 2px solid green;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+.container-main {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}.input-text-area {
+    border: 1px solid yellow;
+    display: grid;
+    place-items: center;
+}
+
+.output-text-area {
+    border: 1px solid white;
+    display: grid;
+    place-items: center;
+}
+
+.input-text {
+    /* background-color: #B9C7A9; */
+    background-color: #F3F5FC;
+    color: #0A3871;
+}
+
+.output-text {
+    /* background-color: #B9C7A9; */
+    background-color: #F3F5FC;
+}
+
+.buttons-area {
+    align-items: center;
+}
