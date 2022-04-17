@@ -6,6 +6,11 @@
     min-height: 100vh;
 }
 
+.container-menu {
+    border: 3px solid red;
+    display: flex;
+}
+
 .container-main {
     border: 1px solid red;
     display: flex;
@@ -33,8 +38,31 @@
 .output-text {
     /* background-color: #B9C7A9; */
     background-color: #F3F5FC;
+    color: #0A3871;
 }
 
 .buttons-area {
     align-items: center;
+}
+
+.social {
+	display: block;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 7.2rem;
+	font-size: 3.3rem;
+	margin: 0;
+	padding: 0;
+}
+.social li {
+	display: inline-block;
+	margin: 0 20px;
+	padding: 0;
+}
+.social li a, .intro-social li a:visited {
+	color: #black;
+}
+.social li a:hover, .intro-social li a:focus {
+	color: #cc005f;
 }
