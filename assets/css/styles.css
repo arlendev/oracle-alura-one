@@ -42,18 +42,28 @@ body {
     padding: 10px;
 }
 
-.input-text, .output-text {
+.input-text {
     background-color: #FFFFFF;
     font-size: 26px;
     color: #0A3871;
     border-radius: 2%;
 }
 
+.output-text {
+    border: 1px solid #0A3871;
+    background-color: #FFFFFF;
+    font-size: 26px;
+    color: #0A3871;
+    border-radius: 2%;
+    width: 25em;
+    height: 20em;
+}
+
 .buttons-area {
     align-items: center;
 }
 
-button {
+.btt {
     background-color: #0A3871;
     border: 1px solid #0A3871;
     margin: 20px;
@@ -65,7 +75,7 @@ button {
     width: 9em;
 }
 
-button:hover {
+.btt:hover {
     border: 1px solid #0A3871;
     background-color: transparent;
     color: #0A3871;

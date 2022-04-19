@@ -31,15 +31,17 @@
                     <label class="label-text">Entrada de texto</label>
                     <textarea class="input-text" cols="45" rows="17"></textarea>
                     <div class="buttons-area">
-                        <button>Criptografar</button>
-                        <button>Descriptografar</button>
-                        <button>Limpar</button>
+                        <button class="btt" id="encrypt">Criptografar</button>
+                        <button class="btt" id="decrypt">Descriptografar</button>
+                        <button class="btt" id="clean">Limpar</button>
                     </div>
                 </div>
                 <div class="output-text-area">
                     <label class="label-text">Saída de texto</label>
-                    <textarea class="output-text" cols="45" rows="17"></textarea>
-                    <button>Copiar texto</button>
+                    <div class="output-text">
+                        <p id="show-msg"></p>
+                    </div>
+                    <button class="btt" id="copy">Copiar texto</button>
                 </div>
             </div>
         </main>
@@ -59,5 +61,6 @@
         </footer>
 
     </div>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
