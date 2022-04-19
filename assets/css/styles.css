@@ -1,87 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
-
-
-.container {
-    /* background-color: #909E80; */
-    font-family: 'Inter', sans-serif;
-    background-color: #F3F5FC;
-
+body {
     max-width: 100vw;
     min-height: 98vh;
+    background-color: #F3F5FC;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container-header {
-    border: 1px solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .app-name {
-    border: 1px solid red;
-    font-size: 1.8em;
-    font-weight: bold;
+    font-size: 2.4em;
+    font-weight: 800;
     color: #0A3871;
 }
 
-.logo {
-    border: 1px solid red;
+#trademark {
     font-size: 1.8em;
-    font-weight: bold;
+    font-weight: 600;
     color: #0A3871;
-
 }
 
 .social {
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+}
+
+.social li a {
+    text-decoration: none;
+}
+
+.social i {
+    color: #0A3871;
+    font-size: 30px;
+}
+
+.social i:hover {
+    color: cornflowerblue;
 }
 
 .container-main {
-
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
-.text {
+.input-text-area, .output-text-area {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+.label-text {
     font-size: 1.5em;
     font-weight: bold;
     color: #0A3871;
-    padding: 5px;
-}
-
-.container-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 40px;
-}
-
-.input-text-area {
-    /* border: 1px solid blue; */
-    display: grid;
-    place-items: center;
     padding: 10px;
 }
 
-.output-text-area {
-    /* border: 1px solid blue; */
-    display: grid;
-    place-items: center;
-    padding: 10px;
-}
-
-.input-text {
-    /* background-color: #B9C7A9; */
+.input-text, .output-text {
     background-color: #FFFFFF;
-    color: #0A3871;
-    border-radius: 2%;
-}
-
-.output-text {
-    /* background-color: #B9C7A9; */
-    background-color: #FFFFFF;
+    font-size: 26px;
     color: #0A3871;
     border-radius: 2%;
 }
@@ -93,7 +81,7 @@
 button {
     background-color: #0A3871;
     border: 1px solid #0A3871;
-    margin: 10px;
+    margin: 20px;
     padding: 15px 20px;
     border-radius: 24px;
     transition: .3s;
@@ -108,53 +96,11 @@ button:hover {
     color: #0A3871;
 }
 
-
-
-
-/*========================ARRUMAR*/
-
-.container-menu div {
-    /* color: 5px solid green; */
-}
-
-.app-name {
-    color: 10px solid black;
-}
-
-.social {
-
+.container-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: block;
-	position: absolute; */
-    /* width: 100%; */
-    /* left: 0; */
-    /* bottom: 7.2rem; */
-    /* font-size: 1rem; */
-    /* margin: 0;
-	padding: 0; */
-}
-
-.social li {
-
-    list-style: none;
-    margin: 0 20px;
-    padding: 0;
-}
-
-.social li a {
-    /* border: 2px solid green; */
-    text-decoration: none;
-    color: blue;
-}
-
-
-/* .social li a:hover, .intro-social li a:focus {
-	color: #cc005f;
-} */
-
-.social i {
-    color: cornflowerblue;
-    font-size: 30px;
+    color: #0A3871;
+    font-size: 18px;
+    height: 40px;
 }
