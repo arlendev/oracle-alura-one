@@ -1,42 +1,58 @@
 body {
-    max-width: 100vw;
-    min-height: 98vh;
+    max-width: 100%;
+    min-height: 100%;
     background-color: #F3F5FC;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+    
+}
+
 .container-header {
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    height: 20%;
 }
 
 .app-name {
-    font-size: 2.4em;
+    font-size: 2.4rem;
     font-weight: 800;
     color: #0A3871;
 }
 
-#trademark {
-    font-size: 1.8em;
+#logo {
+    font-size: 1.8rem;
     font-weight: 600;
     color: #0A3871;
 }
 
 .container-main {
+    /* border: 1px solid green; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
 }
 
 .input-text-area, .output-text-area {
+    /* border: 1px solid green; */
     display: grid;
     place-items: center;
+    width: 40%;
+    height: 40%;
     padding: 10px;
 }
 
 .label-text {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #0A3871;
     padding: 10px;
@@ -44,19 +60,37 @@ body {
 
 .input-text {
     background-color: #FFFFFF;
-    font-size: 26px;
+    font-size: 1.2rem;
     color: #0A3871;
     border-radius: 2%;
+    width: 80%;
+    height: 30rem;
+    box-shadow: 1px 1px 5px 1px grey;
 }
 
 .output-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid #0A3871;
     background-color: #FFFFFF;
     font-size: 26px;
     color: #0A3871;
     border-radius: 2%;
-    width: 25em;
-    height: 20em;
+    width: 80%;
+    height: 30rem;
+    box-shadow: 2px 2px 20px 2px grey;
+}
+
+.empty-result-bold {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: #0A3871;
+}
+
+.empty-result {
+    font-size: 1.0rem;
+    color: #0A3871;
 }
 
 .buttons-area {
@@ -64,31 +98,45 @@ body {
 }
 
 .btt {
-    background-color: #0A3871;
+    background-color: #fff;
     border: 1px solid #0A3871;
     margin: 20px;
     padding: 15px 20px;
     border-radius: 24px;
     transition: .3s;
-    color: #fff;
-    font-size: 1.3em;
-    width: 9em;
+    color: #0A3871;
+    font-size: 1.1rem;
+    width: 11rem;
 }
 
 .btt:hover {
     border: 1px solid #0A3871;
-    background-color: transparent;
+    background-color: #0A3871;
+    color: #fff;
+}
+
+#encrypt {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    color: #fff;
+}
+
+#encrypt:hover {
+    background-color: #fff;
+    border: 1px solid #0A3871;
     color: #0A3871;
 }
 
 .container-footer {
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
     color: #0A3871;
-    font-size: 18px;
-    height: 40px;
-    margin-top: 20px;
+    font-size: 1.1rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
 }
 
 .social {
@@ -114,4 +162,14 @@ body {
 
 .social i:hover {
     color: cornflowerblue;
+}
+
+/* ========================= media query */
+
+@media only screen and (max-width: 900px) {
+
+}
+  
+@media only screen and (max-height: 413px) {
+
 }

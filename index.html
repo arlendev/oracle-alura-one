@@ -20,7 +20,7 @@
                     <h2 class="app-name">Decodificador de Texto</h2>
                 </div>
                 <div>
-                    <h2 id="trademark">| arlen |</h2>
+                    <h2 id="logo">| arlen |</h2>
                 </div>
             </div>
         </header>
@@ -28,8 +28,8 @@
         <main>
             <div class="container-main">
                 <div class="input-text-area">
-                    <label class="label-text">Entrada de texto</label>
-                    <textarea class="input-text" cols="45" rows="17"></textarea>
+                    <label class="label-text">Digite para Criptografar</label>
+                    <textarea class="input-text" placeholder=" Digite seu texto aqui"></textarea>
                     <div class="buttons-area">
                         <button class="btt" id="encrypt">Criptografar</button>
                         <button class="btt" id="decrypt">Descriptografar</button>
@@ -37,9 +37,12 @@
                     </div>
                 </div>
                 <div class="output-text-area">
-                    <label class="label-text">Saída de texto</label>
+                    <label class="label-text">Resultado</label>
                     <div class="output-text">
                         <p id="show-msg"></p>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span class="empty-result-bold">Nenhuma mensagem criptografada</span>
+                        <span class="empty-result">Digite um texto no campo ao lado para criptografar</span>
                     </div>
                     <button class="btt" id="copy">Copiar texto</button>
                 </div>
