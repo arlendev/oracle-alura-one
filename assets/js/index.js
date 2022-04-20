@@ -1,100 +1,82 @@
-const criptografia = ["enter", "imes", "ai", "ober", "ufat"];
-const descriptografia = ["e", "i", "a", "o", "u"];
+let btnEncript = document.getElementById("encrypt");
+let btnDecrypt = document.getElementById("decrypt");
+let btnCopiar = document.getElementById("copy");
+let input = document.querySelector(".input-text");
+let resultado = document.getElementById("show-msg");
+let msgVazioBold = document.querySelector(".empty-result-bold");
+let msgVazio = document.querySelector(".empty-result");
+// let imgVazio = document.querySelector(".img_lupa");
 
-const inputText = document.getElementsByClassName("input-text");
+btnEncript.addEventListener("click", function () {
+  validaTexto(criptografa);
+});
 
-const buttonCriptografar = document.getElementById("encrypt");
-const buttonDescriptografar = document.getElementById("decrypt");
-const copia = document.querySelector("#copy");
+btnDecrypt.addEventListener("click", function () {
+  validaTexto(descriptografa);
+});
 
-buttonCriptografar.addEventListener("click", criptografar);
-buttonDescriptografar.addEventListener("click", descriptografar);
-copia.addEventListener("click", copiar);
++btnCopiar.addEventListener("click", function () {
+  this.classList.add("btnCopiado");
+  navigator.clipboard.writeText(resultado.textContent);
+  this.textContent = "Texto copiado!";
+});
 
-function criptografar() {
-    let texto = inputText.value;
-    let resultado = "";
+function validaTexto(funcao) {
+  if (input.value == "") { //input.value vazio
+    resultado.textContent = "";
+    msgVazioBold.style.display = "block";
+    msgVazio.style.display = "block";
+    imgVazio.style.display = "block";
+    btnCopiar.style.display = "none";
+    return;
+  }
 
-    if (texto != "") {
-
-        resultado = texto.replace(/e|i|a|o|u/g, function (x) {
-            if (x == "e") {
-                return criptografia[0];
-            }
-            else if (x == "i") {
-                return criptografia[1];
-            }
-            else if (x == "a") {
-                return criptografia[2];
-            }
-            else if (x == "o") {
-                return criptografia[3];
-            }
-            else if (x == "u") {
-                return criptografia[4];
-            }
-
-
-        })
-
-        exibirResultado(resultado);
-        limparInput();
-
+  else {
+    for (let i = 0; i < input.value.length; i++) {
+      if (input.value.charCodeAt(i) < 97 || input.value.charCodeAt(i) > 122) {
+        if (input.value.charCodeAt(i) == 32) continue;
+        if (input.value.charCodeAt(i) == 231) continue;
+        //input.value com caracteres inválidos
+        alert("Não use caracteres inválidos!");
+        input.value = "";
+        return;
+      }
     }
+  }
+
+  //input.value válido
+  msgVazioBold.style.display = "none";
+  msgVazio.style.display = "none";
+  imgVazio.style.display = "none";
+  btnCopiar.style.display = "block";
+
+
+  resultado.textContent = funcao(input.value);
+  btnCopiar.classList.remove("btn_copiado");
+  btnCopiar.textContent = "Copiar";
+  input.value = "";
 }
 
-function descriptografar() {
-    let texto = inputText.value;
-    let resultado = "";
+function criptografa(texto) {
+  let resultado = texto;
 
-    if (texto != "") {
+  resultado = resultado.replaceAll("e", "enter");
+  resultado = resultado.replaceAll("i", "imes");
+  resultado = resultado.replaceAll("a", "ai");
+  resultado = resultado.replaceAll("o", "ober");
+  resultado = resultado.replaceAll("u", "ufat");
 
-
-        resultado = texto.replace(/enter|imes|ai|ober|ufat/g, function (x) {
-            if (x == "enter") {
-                return descriptografia[0];
-            }
-            else if (x == "imes") {
-                return descriptografia[1];
-            }
-            else if (x == "ai") {
-                return descriptografia[2];
-            }
-            else if (x == "ober") {
-                return descriptografia[3];
-            }
-            else if (x == "ufat") {
-                return descriptografia[4];
-            }
-        })
-
-        exibirResultado(resultado);
-        limparInput();
-    }
+  return resultado;
 }
 
-function exibirResultado(texto) {
-    let exibe = document.querySelector("#output-text");
-    let divImg = document.querySelector(".divImg");
+function descriptografa(texto) {
+  let resultado = texto;
 
-    divImg.style.display = "none";
+  resultado = resultado.replaceAll("ai", "a");
+  resultado = resultado.replaceAll("enter", "e");
+  resultado = resultado.replaceAll("imes", "i");
+  resultado = resultado.replaceAll("ober", "o");
+  resultado = resultado.replaceAll("ufat", "u");
 
-    exibe.textContent = texto;    
-
-    copia.style.display = "block";
-
+  return resultado;
 }
-
-async function copiar(){
-    let msgP = document.querySelector("#msgP").textContent;
-    await navigator.clipboard.writeText(msgP);
-}
-
-window.onload = function () {
-    limparInput();
-}
-
-function limparInput() {
-    input-text.value = "";
-}
-
