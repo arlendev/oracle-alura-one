@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codificador</title>
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
 </head>
@@ -29,7 +29,7 @@
             <div class="containerMain">
                 <div class="inputTextArea">
                     <label class="labelText">Digite para Criptografar</label>
-                    <textarea class="inputText" placeholder=" Digite seu texto aqui"></textarea>
+                    <textarea class="inputText" id="textArea" placeholder=" Digite seu texto aqui"></textarea>
                     <div class="buttonsArea">
                         <button class="btn" id="encryptBtn">Criptografar</button>
                         <button class="btn" id="decryptBtn">Descriptografar</button>
@@ -40,7 +40,7 @@
                     <div class="outputText">
                         <p id="showMsg"></p>
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <span class="emptyResult">Nenhuma mensagem criptografada.</span>
+                        <span class="emptyResult" id="contentPhrase">Nenhuma mensagem criptografada.</span>
                     </div>
                     <button class="btn" id="copyBtn">Copiar texto</button>
                 </div>
