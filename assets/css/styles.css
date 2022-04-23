@@ -194,7 +194,7 @@ body {
     }
 
     .social li p {
-        width: 380px;
+        display: none;
     }
 }
   
