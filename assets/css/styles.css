@@ -164,7 +164,38 @@ body {
 /* ========================= media query */
 
 @media only screen and (max-width: 900px) {
+    .appName {
+        font-size: 25px;
+        font-weight: 800;
+        color: #0A3871;
+    }
 
+    #logo {
+        font-size: 18px;
+    }
+
+    .containerMain {
+        display: grid;
+        place-items: centre;
+    }
+
+    .inputText {
+        width: 380px;
+        height: 200px;
+    }
+
+    .btn {
+        width: 160px;
+    }
+
+    .outputText {
+        width: 380px;
+        height: 200px;
+    }
+
+    .social li p {
+        width: 380px;
+    }
 }
   
 @media only screen and (max-height: 413px) {
