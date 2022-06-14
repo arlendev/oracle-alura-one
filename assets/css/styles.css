@@ -24,12 +24,6 @@ body {
     color: #0A3871;
 }
 
-#logo {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #0A3871;
-}
-
 .containerMain {
     display: flex;
     justify-content: center;
@@ -141,17 +135,12 @@ body {
     padding: 0;
 }
 
-.social li a {
-    text-decoration: none;
+.social img {
+    width: 30px;
 }
-
-.social i {
-    color: #0A3871;
-    font-size: 30px;
-}
-
-.social i:hover {
-    color: cornflowerblue;
+  
+.social img:hover {
+    opacity: 80%;
 }
 
 /* ========================= media query */
