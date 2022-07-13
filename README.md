@@ -61,7 +61,7 @@ Lorem ipsum is placeholder text commonly used in the graphic, print, and publish
 
 <div align="center">
   <a href="https://arlendev.github.io/portfolio/">
-    <img src="assets/img/arlenBlue.png" target="_blank" alt="Logo" width="auto" height="130">
+    <img src="assets/img/logoArlen.png" target="_blank" alt="Logo" width="auto" height="130">
   </a>
 </div>
 
