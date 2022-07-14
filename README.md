@@ -48,7 +48,7 @@ Lorem ipsum is placeholder text commonly used in the graphic, print, and publish
 
 ## :memo: License ##
 
-This project is under MIT license. See the [LICENSE](LICENSE.md) file for more details.
+This project is under MIT license. See the [LICENSE](LICENSE) file for more details.
 
 ## :v: Credits ##
 
