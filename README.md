@@ -43,7 +43,7 @@ This is the first challenge developed during the ONE - Oracle Next Education pro
 
 ## :computer: Installation ##
 
-Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+No installation required, you can download the zipped project.
 
 
 ## :memo: License ##
