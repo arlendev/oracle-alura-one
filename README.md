@@ -52,7 +52,7 @@ This project is under MIT license. See the [LICENSE](LICENSE.md) file for more d
 
 ## :v: Credits ##
 
-Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+Partial credits @lucasdev3 (Lucas Souza).
 
 ## :pencil2: Author ##
 
