@@ -14,9 +14,9 @@
   &nbsp
   <img alt="Number of languages used" src="https://img.shields.io/github/languages/count/arlendev/oracle-alura-one?color=#FEAC40">
   &nbsp
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/arlendev/oracle-alura-one?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/arlendev/oracle-alura-one?color=#FEAC40">
   &nbsp
-  <img alt="License" src="https://img.shields.io/github/license/arlendev/oracle-alura-one?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/arlendev/oracle-alura-one?color=#FEAC40">
   &nbsp
 </p>
 
