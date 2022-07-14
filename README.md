@@ -7,7 +7,7 @@
 
 </div>
 
-<h1 align="center">Project Name</h1>
+<h1 align="center">Text Encoder and Decoder</h1>
 
 <p align="center">
   <img alt="Main project language" src="https://img.shields.io/github/languages/top/arlendev/oracle-alura-one?color=#FEAC40">
@@ -33,11 +33,13 @@
 
 ## :dart: About ##
 
-Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+This is the first challenge developed during the ONE - Oracle Next Education program, with the aim of putting the contents studied into practice. The challenge is to create a text encoder/decoder using knowledge in HTML, CSS and JavaScript acquired during the classes. Cards were made available in Trello to guide and manage the development of the project and a proposed styling model in Figma.
 
 ## :rocket: Technologies ##
 
-Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+- HTML
+- CSS
+- JavaScript
 
 ## :computer: Installation ##
 
