@@ -52,7 +52,7 @@ This project is under MIT license. See the [LICENSE](LICENSE) file for more deta
 
 ## :v: Credits ##
 
-Partial credits @lucasdev3 (Lucas Souza).
+Partial credits [Lucas Souza](https://github.com/lucasdev3)
 
 ## :pencil2: Author ##
 
